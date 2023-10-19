@@ -5,11 +5,17 @@ const stone = document.getElementById('stone');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 
+const roundText = document.getElementById('roundText');
 const roundNum = document.getElementById('round');
 
 const playerSelec = document.getElementById('playerSelec');
 const machineSelec = document.getElementById('machineSelec');
 const result = document.getElementById('result');
+
+const textUpButtons = document.getElementById('text-middle-main');
+const containerButtons = document.getElementById('container-elements');
+const btnRefrescar = document.getElementById('btnRefrescar');
+
 
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -18,7 +24,7 @@ const getRandomNumber = (min, max) => {
 let playerPoi = 0;
 let machinePoi = 0;
 let roundNumber = 1;
-const maxPoints = 3;
+const maxPoints = 5;
 
 function startGame(numberSelection) {
     let playerSelection = numberSelection;
@@ -103,4 +109,21 @@ function draw() {
 }
 
 function gameOver() {
+    if (playerPoi === maxPoints) {
+        textUpButtons.style.fontWeight = 700;
+        textUpButtons.innerText = "¡FELICIDADES! Ganaste la partida";
+    } else {
+        textUpButtons.style.fontWeight = 700;
+        textUpButtons.innerText = "Lástima, será en otra oportunidad";
+    }
+    containerButtons.style.display = "none";
+    playerSelec.style.display = "none";
+    machineSelec.style.display = "none";
+    result.style.display = "none";
+    roundText.style.display = "none";
+    btnRefrescar.style.display = "block";
+}
+
+function reiniciarPartida() {
+    location.reload();
 }

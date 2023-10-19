@@ -15,22 +15,23 @@
             <h1>Piedra, Papel o Tijera</h1>
             <p>¿le ganas a la máquina?</p>
         </div>
-        <p class="text-top-main">El primero en llegar a 3 puntos gana.</p>
+        <p class="text-top-main">El primero en llegar a 5 puntos gana.</p>
         <div class="container-scoreboard">
             <div class="container-scoreboard-player"><p>JUGADOR</p></div>
             <div class="container-scoreboard-numbers"><span id="player-points">0</span><p> - </p><span id="machine-points">0</span></div>
             <div class="container-scoreboard-player"><p>MÁQUINA</p></div>
         </div>
-        <p class="text-middle-main">Que vas a usar para el siguiente turno</p>
-        <div class="container-elements">
+        <p id="text-middle-main" class="text-middle-main">Que vas a usar para el siguiente turno</p>
+        <div id="container-elements" class="container-elements">
             <button onclick="startGame(1)" id="stone"><img src="./svg/stone.svg" alt="Piedra"><p>Piedra</p></button>
             <button onclick="startGame(2)" id="paper"><img src="./svg/paper.svg" alt="Papel"><p>Papel</p></button>
             <button onclick="startGame(3)" id="scissors"><img src="./svg/scissors.svg" alt="Tijera"><p>Tijera</p></button>
         </div>
-        <p class="text-bottom-main">Ronda <span id="round">1</span></p>
+        <p id="roundText" class="text-bottom-main">Ronda <span id="round">1</span></p>
         <p id="playerSelec"></p>
         <p id="machineSelec"></p>
         <p id="result"></p>
+        <button onclick="reiniciarPartida()" class="btnRefrescar" id="btnRefrescar">Reinicar Partida</button>
     </main>
 </body>
 <script src="scripts.js"></script>
