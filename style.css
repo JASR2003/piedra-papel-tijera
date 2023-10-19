@@ -48,7 +48,7 @@ main{
 }
 
 .text-top-main {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .container-scoreboard {
@@ -56,7 +56,7 @@ main{
     justify-content: space-between;
     align-items: center;
     width: 30%;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .container-scoreboard-numbers {
@@ -79,4 +79,32 @@ main{
     border: 1px solid var(--text-color-primary);
     padding: 10px 15px;
     border-radius: 20px;
+}
+
+.container-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin: 20px auto;
+}
+
+.container-elements button {
+    width: 30%;
+    border-radius: 25px;
+    border: 1px solid var(--text-color-primary);
+    transition: 100ms;
+}
+.container-elements button:hover {
+    transform: scale(1.1);
+}
+.container-elements button:active {
+    transform: scale(0.9);
+}
+
+.container-elements button img {
+    width: 40%;
+}
+.text-bottom-main {
+    font-weight: 700;
 }
