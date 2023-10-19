@@ -55,7 +55,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin: 30px auto;
 }
 
@@ -131,4 +131,39 @@ main{
 }
 .btnRefrescar:active{
     transform: scale(0.9);
+}
+
+@media (max-width: 1023px) {
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    .container-top {
+        height: 100px;
+        line-height: 1.6;
+    }
+    .text-top-main {
+        margin-top: 10px;
+    }
+    .container-scoreboard {
+    width: 45%;
+    margin: 10px auto;
+    }
+    .container-elements {
+        width: 45%;
+        margin: 10px auto;
+    }
+    .playerSelec, .machineSelec, .result {
+        margin-top: 5px;
+    }
+
+    .btnRefrescar {
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
 }
