@@ -17,6 +17,7 @@ const getRandomNumber = (min, max) => {
 
 let playerPoi = 0;
 let machinePoi = 0;
+const maxPoints = 3;
 
 function startGame(numberSelection) {
     let playerSelection = numberSelection;
@@ -36,5 +37,11 @@ function startGame(numberSelection) {
         machineWin();
     } else {
         draw();
+    }
+
+    if (
+        playerPoi >= maxPoints || machinePoi >= maxPoints
+    ) {
+        gameOver();
     }
 }
