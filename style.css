@@ -108,3 +108,7 @@ main{
 .text-bottom-main {
     font-weight: 700;
 }
+
+.playerSelec, .machineSelec, .result {
+    margin-top: 10px;
+}
