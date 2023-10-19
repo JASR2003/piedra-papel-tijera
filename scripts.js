@@ -83,9 +83,6 @@ function userWin() {
     roundNum.innerText = "";
     roundNumber++;
     roundNum.innerText = roundNumber;
-    roundNum.innerText = "";
-    roundNumber++;
-    roundNum.innerText = roundNumber;
 }
 function machineWin() {
     machinePoi++;
