@@ -111,8 +111,8 @@ main{
     font-weight: 700;
 }
 
-.playerSelec, .machineSelec, .result {
-    margin-top: 25px;
+#roundText, #playerSelec, #machineSelec, #result {
+    line-height: 1.4;
 }
 
 .btnRefrescar {
