@@ -49,7 +49,7 @@ main{
 }
 
 .text-top-main {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .container-scoreboard {
@@ -107,7 +107,7 @@ main{
     width: 40%;
 }
 .text-bottom-main {
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 700;
 }
 
@@ -125,7 +125,7 @@ main{
     font-weight: 700;
     font-size: 20px;
     transition: 100ms;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .btnRefrescar:hover{
@@ -213,6 +213,6 @@ main{
         margin: auto 10px;
     }
     .text-bottom-main {
-       margin-top: 30px;
+       margin-top: 40px;
     }
 }
