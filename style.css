@@ -134,8 +134,11 @@ main{
 .btnRefrescar:active{
     transform: scale(0.9);
 }
-.imagen {
-    animation: scale 5s infinite;
+.imgTrophy {
+    display: none;
+    width: 100px;
+    margin-top: 20px;
+    animation: scale 3s infinite;
 }
 
 @keyframes scale {
@@ -144,7 +147,7 @@ main{
     }
 
     50% {
-        transform: scale(2);
+        transform: scale(1.5);
     }
 
     100% {

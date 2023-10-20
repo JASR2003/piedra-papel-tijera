@@ -15,6 +15,7 @@ const result = document.getElementById('result');
 const textUpButtons = document.getElementById('text-middle-main');
 const containerButtons = document.getElementById('container-elements');
 const btnRefrescar = document.getElementById('btnRefrescar');
+const imgTrophy = document.getElementById('imgTrophy');
 
 
 const getRandomNumber = (min, max) => {
@@ -110,6 +111,7 @@ function draw() {
 
 function gameOver() {
     if (playerPoi === maxPoints) {
+        imgTrophy.style.display = 'block';
         textUpButtons.style.fontWeight = 700;
         textUpButtons.innerText = "¡FELICIDADES! Ganaste la partida";
     } else {
