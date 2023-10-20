@@ -15,7 +15,7 @@ body {
     background-color: var(--background-color-primary);
     color: var(--text-color-primary);
     font-family: 'Montserrat', sans-serif;
-    max-width: 1280px;
+    max-width: 1440px;
 }
 
 h1{
@@ -132,4 +132,45 @@ main{
 }
 .btnRefrescar:active{
     transform: scale(0.9);
+}
+
+@media (min-width: 425px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .text-top-main {
+    margin-top: 15px;
+    }
+
+    .container-scoreboard {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .container-scoreboard-numbers {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    .container-scoreboard-numbers p {
+        margin: auto 8px;
+    }
+
+    .container-scoreboard-player {
+        padding: 8px 12px;
+    }
+
+    .container-elements {
+        width: 75%;
+        margin: 20px auto;
+    }
+
+    .playerSelec, .machineSelec, .result {
+        margin-top: 18px;
+    }
 }
