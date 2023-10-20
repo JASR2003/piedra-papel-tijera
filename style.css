@@ -174,3 +174,52 @@ main{
         margin-top: 18px;
     }
 }
+@media (min-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .container-scoreboard {
+        width: 60%;
+    }
+    .container-elements {
+        width: 65%;
+    }
+}
+@media (min-width: 769px) {
+    h1 {
+        font-size: 32px;
+    }
+    .container-scoreboard {
+        width: 50%;
+    }
+    .container-scoreboard-numbers {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+    .container-scoreboard-player {
+        padding: 10px 20px;
+    }
+    .container-elements {
+        width: 55%;
+    }
+}
+@media (min-width: 1000px) {
+    .container-scoreboard {
+        width: 40%;
+    }
+    .container-elements {
+        width: 40%;
+    }
+    .container-scoreboard {
+        margin: 25px auto;
+    }
+    .container-scoreboard-numbers p {
+        margin: auto 10px;
+    }
+    .text-bottom-main {
+    margin-top: 30px;
+    }
+}
