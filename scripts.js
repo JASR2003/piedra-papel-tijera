@@ -16,6 +16,7 @@ const textUpButtons = document.getElementById('text-middle-main');
 const containerButtons = document.getElementById('container-elements');
 const btnRefrescar = document.getElementById('btnRefrescar');
 const imgTrophy = document.getElementById('imgTrophy');
+const sadFace = document.getElementById('sadFace');
 
 
 const getRandomNumber = (min, max) => {
@@ -115,6 +116,7 @@ function gameOver() {
         textUpButtons.style.fontWeight = 700;
         textUpButtons.innerText = "¡FELICIDADES! Ganaste la partida";
     } else {
+        sadFace.style.display = 'block';
         textUpButtons.style.fontWeight = 700;
         textUpButtons.innerText = "Lástima, será en otra oportunidad";
     }

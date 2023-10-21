@@ -137,7 +137,8 @@ main{
 .imgTrophy {
     display: none;
     width: 100px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     animation: scale 3s infinite;
 }
 
@@ -152,6 +153,27 @@ main{
 
     100% {
         transform: scale(1);
+    }
+}
+.sadFace {
+    display: none;
+    width: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    animation: scale2 4s infinite;
+}
+
+@keyframes scale2 {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(0.8);
     }
 }
 
