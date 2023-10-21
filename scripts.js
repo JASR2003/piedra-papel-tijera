@@ -50,16 +50,16 @@ function startGame(numberSelection) {
     }
 
     if (
-        (playerSelecValue === "piedra" && machineSelecValue === "tijera") ||
-        (playerSelecValue === "tijera" && machineSelecValue === "papel") ||
-        (playerSelecValue === "papel" && machineSelecValue === "piedra")
+        (playerSelecValue === "Piedra" && machineSelecValue === "Tijera") ||
+        (playerSelecValue === "Tijera" && machineSelecValue === "Papel") ||
+        (playerSelecValue === "Papel" && machineSelecValue === "Piedra")
     ) {
         userWin();
         displayText();
     } else if (
-        (machineSelecValue === "piedra" && playerSelecValue === "tijera") ||
-        (machineSelecValue === "tijera" && playerSelecValue === "papel") ||
-        (machineSelecValue === "papel" && playerSelecValue === "piedra")
+        (machineSelecValue === "Piedra" && playerSelecValue === "Tijera") ||
+        (machineSelecValue === "Tijera" && playerSelecValue === "Papel") ||
+        (machineSelecValue === "Papel" && playerSelecValue === "Piedra")
     ) {
         machineWin();
         displayText();
