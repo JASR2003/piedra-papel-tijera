@@ -91,6 +91,16 @@ function userWin() {
     roundNum.innerText = "";
     roundNumber++;
     roundNum.innerText = roundNumber;
+    function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+    }
+
+    confetti({
+    angle: randomInRange(55, 125),
+    spread: randomInRange(50, 70),
+    particleCount: randomInRange(50, 100),
+    origin: { y: 0.6 }
+    });
 }
 function machineWin() {
     machinePoi++;
@@ -115,6 +125,26 @@ function gameOver() {
         imgTrophy.style.display = 'block';
         textUpButtons.style.fontWeight = 700;
         textUpButtons.innerText = "¡FELICIDADES! Ganaste la partida";
+    let duration = 15 * 1000;
+    let animationEnd = Date.now() + duration;
+    let defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+    }
+
+    let interval = setInterval(function() {
+    let timeLeft = animationEnd - Date.now();
+
+    if (timeLeft <= 0) {
+        return clearInterval(interval);
+    }
+
+    let particleCount = 50 * (timeLeft / duration);
+    // since particles fall down, start a bit higher than random
+    confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+    confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+    }, 250);
     } else {
         sadFace.style.display = 'block';
         textUpButtons.style.fontWeight = 700;
