@@ -114,8 +114,7 @@ main{
 #roundText, #playerSelec, #machineSelec, #result {
     line-height: 1.4;
     font-size: 12;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
 }
 
 .btnRefrescar {
