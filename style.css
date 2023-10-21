@@ -114,7 +114,14 @@ main{
 #roundText, #playerSelec, #machineSelec, #result {
     line-height: 1.4;
     font-size: 12;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+#roundText span,
+#playerSelec b,
+#machineSelec b {
+    margin-left: 6px;
 }
 
 .btnRefrescar {
