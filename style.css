@@ -115,7 +115,7 @@ main{
     line-height: 1.4;
     font-size: 12;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .btnRefrescar {
