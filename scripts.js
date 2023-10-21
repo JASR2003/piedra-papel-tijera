@@ -30,36 +30,36 @@ const maxPoints = 5;
 
 function startGame(numberSelection) {
     let playerSelection = numberSelection;
-    let machineSelection = getRandomNumber(1,3);
+    let machineSelection = getRandomNumber(1,21);
     let playerSelecValue;
     let machineSelecValue;
 
-    if (playerSelection === 1) {
+    if (playerSelection === 1 || playerSelection === 4 || playerSelection === 7 || playerSelection === 10 || playerSelection === 13 || playerSelection === 16 || playerSelection === 19) {
         playerSelecValue = "Piedra"
-    } else if (playerSelection === 2) {
+    } else if (playerSelection === 2 || playerSelection === 5 || playerSelection === 8 || playerSelection === 11 || playerSelection === 14 || playerSelection === 17 || playerSelection === 20) {
         playerSelecValue = "Papel"
-    } else if (playerSelection === 3) {
+    } else if (playerSelection === 3 || playerSelection === 6 || playerSelection === 9 || playerSelection === 12 || playerSelection === 15 || playerSelection === 18 || playerSelection === 21) {
         playerSelecValue = "Tijera"
     }
-    if (machineSelection === 1) {
+    if (machineSelection === 1 || machineSelection === 4 || machineSelection === 7 || machineSelection === 10 || machineSelection === 13 || machineSelection === 16 || machineSelection === 19) {
         machineSelecValue = "Piedra"
-    } else if (machineSelection === 2) {
+    } else if (machineSelection === 2 || machineSelection === 5 || machineSelection === 8 || machineSelection === 11 || machineSelection === 14 || machineSelection === 17 || machineSelection === 20) {
         machineSelecValue = "Papel"
-    } else if (machineSelection === 3) {
+    } else if (machineSelection === 3 || machineSelection === 6 || machineSelection === 9 || machineSelection === 12 || machineSelection === 15 || machineSelection === 18 || machineSelection === 21) {
         machineSelecValue = "Tijera"
     }
 
     if (
-        (playerSelection === 1 && machineSelection === 3) ||
-        (playerSelection === 3 && machineSelection === 2) ||
-        (playerSelection === 2 && machineSelection === 1)
+        (playerSelecValue === "piedra" && machineSelecValue === "tijera") ||
+        (playerSelecValue === "tijera" && machineSelecValue === "papel") ||
+        (playerSelecValue === "papel" && machineSelecValue === "piedra")
     ) {
         userWin();
         displayText();
     } else if (
-        (machineSelection === 1 && playerSelection === 3) ||
-        (machineSelection === 3 && playerSelection === 2) ||
-        (machineSelection === 2 && playerSelection === 1)
+        (machineSelecValue === "piedra" && playerSelecValue === "tijera") ||
+        (machineSelecValue === "tijera" && playerSelecValue === "papel") ||
+        (machineSelecValue === "papel" && playerSelecValue === "piedra")
     ) {
         machineWin();
         displayText();
