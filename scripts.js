@@ -9,7 +9,9 @@ const roundText = document.getElementById('roundText');
 const roundNum = document.getElementById('round');
 
 const playerSelec = document.getElementById('playerSelec');
+const playerContainer = document.getElementById('container-scoreboard-player');
 const machineSelec = document.getElementById('machineSelec');
+const machineContainer = document.getElementById('container-scoreboard-machine');
 const result = document.getElementById('result');
 
 const textUpButtons = document.getElementById('text-middle-main');

@@ -75,7 +75,7 @@ main{
     margin: auto 5px;
 }
 
-.container-scoreboard-player {
+#container-scoreboard-player, #container-scoreboard-machine {
     background-color: var(--background-color-secondary);
     border: 1px solid var(--text-color-primary);
     padding: 5px 10px;
@@ -210,7 +210,7 @@ main{
         margin: auto 8px;
     }
 
-    .container-scoreboard-player {
+    #container-scoreboard-player, #container-scoreboard-machine {
         padding: 8px 12px;
     }
 
@@ -250,7 +250,7 @@ main{
         padding: 20px 30px;
         font-size: 18px;
     }
-    .container-scoreboard-player {
+    #container-scoreboard-player , #container-scoreboard-machine{
         padding: 10px 20px;
     }
     .container-elements {
