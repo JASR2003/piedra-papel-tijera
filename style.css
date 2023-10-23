@@ -94,6 +94,7 @@ main{
     width: 30%;
     border-radius: 25px;
     border: 1px solid var(--text-color-primary);
+    color: var(--text-color-primary);
     transition: 100ms;
 }
 .container-elements button:hover {
