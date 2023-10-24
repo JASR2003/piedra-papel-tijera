@@ -36,11 +36,11 @@ function startGame(numberSelection) {
     let playerSelecValue;
     let machineSelecValue;
 
-    if (playerSelection === 1 || playerSelection === 4 || playerSelection === 7 || playerSelection === 10 || playerSelection === 13 || playerSelection === 16 || playerSelection === 19) {
+    if (playerSelection === 1) {
         playerSelecValue = "Piedra"
-    } else if (playerSelection === 2 || playerSelection === 5 || playerSelection === 8 || playerSelection === 11 || playerSelection === 14 || playerSelection === 17 || playerSelection === 20) {
+    } else if (playerSelection === 2) {
         playerSelecValue = "Papel"
-    } else if (playerSelection === 3 || playerSelection === 6 || playerSelection === 9 || playerSelection === 12 || playerSelection === 15 || playerSelection === 18 || playerSelection === 21) {
+    } else if (playerSelection === 3) {
         playerSelecValue = "Tijera"
     }
     if (machineSelection === 1 || machineSelection === 4 || machineSelection === 7 || machineSelection === 10 || machineSelection === 13 || machineSelection === 16 || machineSelection === 19) {
@@ -93,15 +93,16 @@ function userWin() {
     roundNum.innerText = "";
     roundNumber++;
     roundNum.innerText = roundNumber;
+
     function randomInRange(min, max) {
-    return Math.random() * (max - min) + min;
+        return Math.random() * (max - min) + min;
     }
 
     confetti({
-    angle: randomInRange(55, 125),
-    spread: randomInRange(50, 70),
-    particleCount: randomInRange(50, 100),
-    origin: { y: 0.6 }
+        angle: randomInRange(55, 125),
+        spread: randomInRange(50, 70),
+        particleCount: randomInRange(50, 100),
+        origin: { y: 0.6 }
     });
 }
 function machineWin() {
