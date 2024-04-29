@@ -16,6 +16,8 @@ body {
     color: var(--text-color-primary);
     font-family: 'Montserrat', sans-serif;
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
